@@ -59,7 +59,8 @@ nav {
 
 .a.active::after {
   scale: 1 1; 
-  filter: drop-shadow(1px 1px 15px white); 
+  filter: drop-shadow(1px 1px 15px white);
+  border-bottom: 2px solid red; 
 }
 
 
