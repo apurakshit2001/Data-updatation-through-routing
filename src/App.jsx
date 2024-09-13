@@ -1,23 +1,33 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Dashboard from './ROuting HW/Dashboard';
-import Edit from './ROuting HW/Edit';
-import Delete from './ROuting HW/Delete';
-import Navigation from './ROuting HW/Navigation';
+import React from 'react'
+import Nav from './component/Nav';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
+import Work from './component/Work';
+import Services from './component/Services';
+import Registration from './component/Registration';
+import Footer from './component/Footer';
+
+
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Navigation />
+    <div>
+      <Router>
+        <Nav />
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/delete/:id" element={<Delete />} />
-          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/register" element={<Registration />} />
         </Routes>
-      </div>
-    </Router>
-  );
+        <Footer />
+      </Router>
+    </div>
+  )
 }
 
-export default App;
+export default App
