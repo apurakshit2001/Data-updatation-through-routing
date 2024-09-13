@@ -1,5 +1,5 @@
 # React + Vite
-# https://app.netlify.com/sites/data-updatation/overview
+# https://data-updatation.netlify.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
